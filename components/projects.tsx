@@ -2,31 +2,40 @@ import { ArrowUpRight } from 'lucide-react'
 
 const projects = [
   {
-    title: 'Jenkins + Docker + Argo CD Pipeline',
-    role: 'Full CI/CD → GitOps pipeline',
+    title: 'jenkins-demo',
+    role: 'CI pipeline lab',
     description:
-      'Building a complete pipeline from source to deployment — Jenkins for CI, Docker for containerization, and Argo CD for GitOps-style delivery onto a local Kubernetes cluster (kind/minikube).',
-    tags: ['Jenkins', 'Docker', 'Argo CD', 'Kubernetes'],
-    status: 'Ongoing · Personal Lab',
-    link: 'https://github.com/hahapratik',
+      'A hands-on Jenkins continuous integration lab — building and running automated pipelines against a Python codebase to practice jobs, triggers, and build stages.',
+    tags: ['Jenkins', 'Python', 'CI'],
+    status: 'Public Repo',
+    link: 'https://github.com/hahapratik/jenkins-demo',
   },
   {
-    title: 'Terraform Infrastructure Practice',
-    role: 'Infrastructure as code',
+    title: 'jenkins-cicd-demo',
+    role: 'Full CI/CD pipeline demo',
     description:
-      'Writing and iterating on Terraform configs to provision infrastructure repeatably — including working through real issues like managing large files with .gitignore and cleaning up Git cache.',
-    tags: ['Terraform', 'Git'],
-    status: 'Ongoing · Personal Lab',
-    link: 'https://github.com/hahapratik',
+      'End-to-end CI/CD demonstration with Jenkins — taking a web app from commit to deployment, wiring up the pipeline stages that power the Jenkins + Docker + Argo CD workflow.',
+    tags: ['Jenkins', 'CI/CD', 'HTML'],
+    status: 'Public Repo',
+    link: 'https://github.com/hahapratik/jenkins-cicd-demo',
   },
   {
-    title: 'Graph-Greener',
-    role: 'GitHub contribution graph tool',
+    title: 'JAVA-DSA',
+    role: 'Data structures & algorithms',
     description:
-      'Set up Graph-Greener to explore and populate a GitHub contribution graph — a small side project alongside the main DevOps lab work.',
-    tags: ['Git', 'GitHub'],
-    status: 'Ongoing · Personal Lab',
-    link: 'https://github.com/hahapratik',
+      'Data structures and algorithms practice in Java — arrays, linked lists, trees, and problem-solving patterns, building the CS fundamentals behind the BCA degree.',
+    tags: ['Java', 'DSA'],
+    status: 'Public Repo',
+    link: 'https://github.com/hahapratik/JAVA-DSA',
+  },
+  {
+    title: 'BLOG-AWORLD-',
+    role: 'Blog web app',
+    description:
+      'A JavaScript-powered blog project — building and shipping a working web app front to back, and a playground for web fundamentals outside the DevOps lab.',
+    tags: ['JavaScript', 'Web'],
+    status: 'Public Repo',
+    link: 'https://github.com/hahapratik/BLOG-AWORLD-',
   },
 ]
 
@@ -34,7 +43,7 @@ export function Projects() {
   return (
     <section id="work" className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
-        <p className="font-mono text-xs text-primary">{'// currently building'}</p>
+        <p className="font-mono text-xs text-primary">{'// public repositories'}</p>
         <h2 className="mt-3 text-3xl font-medium tracking-tight text-foreground md:text-4xl">
           Projects
         </h2>
@@ -48,7 +57,9 @@ export function Projects() {
               className="group flex flex-col rounded-lg border border-border bg-card p-6 transition-colors hover:border-primary/40"
             >
               <div className="flex items-start justify-between gap-4">
-                <h3 className="text-lg font-medium text-card-foreground">{project.title}</h3>
+                <h3 className="font-mono text-lg font-medium text-card-foreground">
+                  {project.title}
+                </h3>
                 <ArrowUpRight
                   className="mt-1 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary"
                   aria-hidden="true"

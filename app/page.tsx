@@ -12,8 +12,8 @@ export default function Page() {
       <SiteHeader />
       <main>
         <Hero />
-        <Projects />
         <GithubActivity />
+        <Projects />
         <Skills />
         <About />
         <Contact />

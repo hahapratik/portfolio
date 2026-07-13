@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { GitHubCalendar } from 'react-github-calendar'
 
 const theme = {
-  dark: ['#242424', '#0e4429', '#006d32', '#26a641', '#39d353'],
+  dark: ['#1c1c1c', '#3d3d3d', '#6e6e6e', '#a5a5a5', '#e8e8e8'],
 }
 
 export function GithubActivity() {
