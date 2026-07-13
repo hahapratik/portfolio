@@ -1,35 +1,35 @@
-import { Cloud, GitBranch, Container, Activity, ShieldCheck, Terminal } from 'lucide-react'
+import { Cloud, GitBranch, Container, Terminal, Code2, Activity } from 'lucide-react'
 
 const skills = [
   {
-    icon: Cloud,
-    title: 'Cloud Infrastructure',
-    items: ['AWS', 'GCP', 'Terraform', 'Pulumi'],
-  },
-  {
     icon: Container,
     title: 'Containers & Orchestration',
-    items: ['Kubernetes', 'Docker', 'Helm', 'EKS / GKE'],
+    items: ['Docker', 'Kubernetes', 'Argo CD'],
   },
   {
     icon: GitBranch,
     title: 'CI/CD & GitOps',
-    items: ['GitHub Actions', 'ArgoCD', 'Jenkins', 'Atlantis'],
+    items: ['Jenkins', 'GitHub Actions', 'Git', 'GitHub'],
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud & Infrastructure',
+    items: ['AWS', 'Azure', 'Terraform', 'Ansible'],
   },
   {
     icon: Activity,
-    title: 'Observability',
-    items: ['Prometheus', 'Grafana', 'Loki', 'OpenTelemetry'],
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Security & Compliance',
-    items: ['OPA', 'Vault', 'Trivy', 'IAM hardening'],
+    title: 'Monitoring',
+    items: ['Prometheus'],
   },
   {
     icon: Terminal,
-    title: 'Scripting & Automation',
-    items: ['Bash', 'Python', 'Go', 'Ansible'],
+    title: 'Systems & Tooling',
+    items: ['Linux', 'Arch', 'Bash', 'Vim'],
+  },
+  {
+    icon: Code2,
+    title: 'Languages',
+    items: ['Python', 'Java', 'C / C++', 'JavaScript', 'HTML / CSS'],
   },
 ]
 
