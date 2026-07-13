@@ -129,3 +129,11 @@
     scroll-behavior: smooth;
   }
 }
+
+/* Hide the native cursor when the custom cursor trail is active (fine pointers only) */
+@media (pointer: fine) {
+  html.has-cursor-trail,
+  html.has-cursor-trail * {
+    cursor: none;
+  }
+}
