@@ -20,15 +20,6 @@ const projects = [
     link: 'https://github.com/hahapratik/jenkins-cicd-demo',
   },
   {
-    title: 'JAVA-DSA',
-    role: 'Data structures & algorithms',
-    description:
-      'Data structures and algorithms practice in Java — arrays, linked lists, trees, and problem-solving patterns, building the CS fundamentals behind the BCA degree.',
-    tags: ['Java', 'DSA'],
-    status: 'Public Repo',
-    link: 'https://github.com/hahapratik/JAVA-DSA',
-  },
-  {
     title: 'BLOG-AWORLD-',
     role: 'Blog web app',
     description:
