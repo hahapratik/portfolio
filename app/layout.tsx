@@ -7,9 +7,9 @@ const _geistSans = Geist({ subsets: ['latin'] })
 const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Alex Carter — DevOps Engineer',
+  title: 'Pratik Kumar Verman — Aspiring DevOps Engineer',
   description:
-    'DevOps engineer specializing in cloud infrastructure, CI/CD pipelines, Kubernetes, and platform reliability.',
+    'Aspiring DevOps Engineer from Delhi NCR, India. Building CI/CD pipelines with Jenkins and Docker, infrastructure with Terraform, and GitOps deployments with Argo CD on Kubernetes.',
   generator: 'v0.app',
   icons: {
     icon: [
