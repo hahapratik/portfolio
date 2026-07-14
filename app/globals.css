@@ -138,3 +138,72 @@
     cursor: none;
   }
 }
+
+.terminal-shell {
+  position: relative;
+}
+
+.terminal-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 3px,
+    rgb(255 255 255 / 0.03) 4px
+  );
+}
+
+.terminal-line {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: terminal-line-in 0.5s ease forwards;
+}
+
+.terminal-line-1 {
+  animation-delay: 0.1s;
+}
+
+.terminal-line-2 {
+  animation-delay: 0.55s;
+}
+
+.terminal-line-3 {
+  animation-delay: 1s;
+}
+
+.terminal-line-4 {
+  animation-delay: 1.35s;
+}
+
+.terminal-name {
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid currentColor;
+  animation:
+    terminal-type 2.2s steps(19, end) 1.45s forwards,
+    terminal-caret 0.8s step-end 1.45s infinite;
+}
+
+@keyframes terminal-line-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes terminal-type {
+  to {
+    width: 19ch;
+  }
+}
+
+@keyframes terminal-caret {
+  50% {
+    border-color: transparent;
+  }
+}
