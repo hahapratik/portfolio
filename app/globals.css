@@ -203,3 +203,36 @@
     border-color: transparent;
   }
 }
+
+.depth-object {
+  position: absolute;
+  border-radius: 9999px;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  background:
+    radial-gradient(circle at 30% 30%, rgb(255 255 255 / 0.2), transparent 60%),
+    rgb(255 255 255 / 0.03);
+  filter: blur(0.5px);
+  animation:
+    depth-float var(--depth-duration, 16s) ease-in-out var(--depth-delay, 0s) infinite,
+    depth-pulse 7s ease-in-out var(--depth-delay, 0s) infinite;
+}
+
+@keyframes depth-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -24px, 0) scale(1.08);
+  }
+}
+
+@keyframes depth-pulse {
+  0%,
+  100% {
+    opacity: 0.14;
+  }
+  50% {
+    opacity: 0.32;
+  }
+}
