@@ -82,7 +82,7 @@ export function Skills() {
                       width={24}
                       height={24}
                       loading="lazy"
-                      className="size-6 shrink-0 opacity-80 grayscale"
+                      className="size-6 shrink-0"
                       aria-hidden="true"
                     />
                     <span className="text-sm text-card-foreground">{skill.name}</span>
