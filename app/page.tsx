@@ -6,13 +6,15 @@ import { Skills } from '@/components/skills'
 import { About } from '@/components/about'
 import { Contact } from '@/components/contact'
 import { CursorTrail } from '@/components/cursor-trail'
+import { ElementalBackground } from '@/components/elemental-background'
 
 export default function Page() {
   return (
-    <>
+    <div className="relative isolate min-h-screen">
+      <ElementalBackground />
       <CursorTrail />
       <SiteHeader />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <GithubActivity />
         <Projects />
@@ -20,7 +22,7 @@ export default function Page() {
         <About />
         <Contact />
       </main>
-      <footer className="border-t border-border">
+      <footer className="relative z-10 border-t border-border">
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-6 py-8">
           <p className="font-mono text-xs text-muted-foreground">
             <span className="text-primary">~/</span>pratik — Delhi NCR, India
@@ -30,6 +32,6 @@ export default function Page() {
           </p>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
