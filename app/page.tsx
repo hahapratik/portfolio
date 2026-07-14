@@ -5,15 +5,17 @@ import { GithubActivity } from '@/components/github-activity'
 import { Skills } from '@/components/skills'
 import { About } from '@/components/about'
 import { Contact } from '@/components/contact'
+import { CursorTrail } from '@/components/cursor-trail'
 
 export default function Page() {
   return (
     <>
+      <CursorTrail />
       <SiteHeader />
       <main>
         <Hero />
-        <Projects />
         <GithubActivity />
+        <Projects />
         <Skills />
         <About />
         <Contact />
