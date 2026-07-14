@@ -23,9 +23,6 @@ export default function Page() {
             <Hero />
           </ScrollReveal>
           <ScrollReveal>
-            <About />
-          </ScrollReveal>
-          <ScrollReveal>
             <GithubActivity />
           </ScrollReveal>
           <ScrollReveal>
@@ -33,6 +30,9 @@ export default function Page() {
           </ScrollReveal>
           <ScrollReveal>
             <Skills />
+          </ScrollReveal>
+          <ScrollReveal>
+            <About />
           </ScrollReveal>
           <ScrollReveal>
             <Contact />
