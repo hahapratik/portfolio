@@ -1,12 +1,19 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { GitHubCalendar } from 'react-github-calendar'
 
 const theme = {
-  dark: ['#242424', '#0e4429', '#006d32', '#26a641', '#39d353'],
+  dark: ['#1c1c1c', '#3d3d3d', '#6e6e6e', '#a5a5a5', '#e8e8e8'],
 }
 
 export function GithubActivity() {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
     <section id="activity" className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
@@ -26,16 +33,20 @@ export function GithubActivity() {
           </a>{' '}
           — pipelines, Terraform configs, and daily lab work.
         </p>
-        <div className="mt-10 overflow-x-auto rounded-lg border border-border bg-card p-6">
-          <GitHubCalendar
-            username="hahapratik"
-            colorScheme="dark"
-            theme={theme}
-            blockSize={11}
-            blockMargin={3}
-            fontSize={12}
-            style={{ color: 'var(--muted-foreground)' }}
-          />
+        <div className="mt-10 min-h-40 overflow-x-auto rounded-lg border border-border bg-card p-6">
+          {mounted ? (
+            <GitHubCalendar
+              username="hahapratik"
+              colorScheme="dark"
+              theme={theme}
+              blockSize={11}
+              blockMargin={3}
+              fontSize={12}
+              style={{ color: 'var(--muted-foreground)' }}
+            />
+          ) : (
+            <div className="h-28 w-full animate-pulse rounded bg-muted" aria-hidden="true" />
+          )}
         </div>
       </div>
     </section>
