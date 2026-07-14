@@ -6,10 +6,12 @@ import { Skills } from '@/components/skills'
 import { About } from '@/components/about'
 import { Contact } from '@/components/contact'
 import { CursorTrail } from '@/components/cursor-trail'
+import { IntroLoader } from '@/components/intro-loader'
 
 export default function Page() {
   return (
     <>
+      <IntroLoader />
       <CursorTrail />
       <SiteHeader />
       <main>

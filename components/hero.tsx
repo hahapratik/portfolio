@@ -1,39 +1,19 @@
 export function Hero() {
   return (
     <section id="top" className="mx-auto max-w-5xl px-6 pt-24 pb-20 md:pt-36 md:pb-28">
-      <div className="terminal-shell overflow-hidden rounded-xl border border-border/70 bg-card/90 shadow-[0_18px_60px_-40px_rgba(255,255,255,0.55)]">
-        <div className="flex items-center justify-between border-b border-border/70 px-4 py-2">
-          <div className="flex items-center gap-2">
-            <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/35" />
-            <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/35" />
-            <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/35" />
-          </div>
-          <p className="font-mono text-[11px] tracking-wider text-muted-foreground">
-            pratik@portfolio:~$
-          </p>
-        </div>
-        <div className="space-y-3 px-5 py-6 font-mono text-sm md:px-8 md:py-10 md:text-base">
-          <p className="terminal-line terminal-line-1 text-primary">
-            {'> init --profile "devops"'}
-          </p>
-          <p className="terminal-line terminal-line-2 text-muted-foreground">
-            {'> loading personal portfolio...'}
-          </p>
-          <div className="terminal-line terminal-line-3 flex flex-wrap items-end gap-2">
-            <span className="text-muted-foreground">$ whoami</span>
-            <h1
-              aria-label="Pratik Kumar Verman"
-              className="terminal-name text-balance text-3xl font-medium tracking-tight text-foreground md:text-5xl"
-            >
-              Pratik Kumar Verman
-            </h1>
-          </div>
-          <p className="terminal-line terminal-line-4 max-w-2xl leading-relaxed text-muted-foreground">
-            Aspiring DevOps Engineer · CI/CD with Jenkins &amp; Docker · Terraform
-            infrastructure · GitOps deployments with Argo CD on Kubernetes.
-          </p>
-        </div>
-      </div>
+      <p className="mb-6 font-mono text-sm text-primary">
+        {'> _ building a full DevOps lab, one pipeline at a time'}
+      </p>
+      <h1 className="text-balance text-5xl font-medium leading-tight tracking-tight text-foreground md:text-7xl">
+        Pratik Kumar Verman
+      </h1>
+      <p className="mt-6 max-w-xl font-mono text-sm leading-relaxed text-muted-foreground md:text-base">
+        Aspiring DevOps Engineer
+        <br />
+        CI/CD with Jenkins &amp; Docker, infrastructure with Terraform,
+        <br className="hidden md:block" />
+        {' and GitOps deployments with Argo CD on Kubernetes.'}
+      </p>
       <div className="mt-12 flex flex-wrap items-center gap-4">
         <a
           href="#work"
