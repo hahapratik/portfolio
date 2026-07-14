@@ -139,11 +139,11 @@
   }
 }
 
-.terminal-shell {
+.intro-terminal-shell {
   position: relative;
 }
 
-.terminal-shell::before {
+.intro-terminal-shell::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -156,53 +156,49 @@
   );
 }
 
-.terminal-line {
+.intro-line {
   opacity: 0;
   transform: translateY(6px);
-  animation: terminal-line-in 0.5s ease forwards;
+  animation: intro-line-in 0.5s ease forwards;
 }
 
-.terminal-line-1 {
+.intro-line-1 {
   animation-delay: 0.1s;
 }
 
-.terminal-line-2 {
+.intro-line-2 {
   animation-delay: 0.55s;
 }
 
-.terminal-line-3 {
+.intro-line-3 {
   animation-delay: 1s;
 }
 
-.terminal-line-4 {
-  animation-delay: 1.35s;
-}
-
-.terminal-name {
+.intro-typed-name {
   display: inline-block;
   width: 0;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid currentColor;
   animation:
-    terminal-type 2.2s steps(19, end) 1.45s forwards,
-    terminal-caret 0.8s step-end 1.45s infinite;
+    intro-type 1.6s steps(19, end) 1.2s forwards,
+    intro-caret 0.8s step-end 1.2s infinite;
 }
 
-@keyframes terminal-line-in {
+@keyframes intro-line-in {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes terminal-type {
+@keyframes intro-type {
   to {
     width: 19ch;
   }
 }
 
-@keyframes terminal-caret {
+@keyframes intro-caret {
   50% {
     border-color: transparent;
   }
