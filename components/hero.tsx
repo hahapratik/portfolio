@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section id="top" className="mx-auto max-w-5xl px-6 pt-24 pb-20 md:pt-36 md:pb-28">
+    <section id="top" className="section-enter mx-auto max-w-5xl px-6 pt-24 pb-20 md:pt-36 md:pb-28">
       <p className="mb-6 font-mono text-sm text-primary">
         {'> _ building a full DevOps lab, one pipeline at a time'}
       </p>

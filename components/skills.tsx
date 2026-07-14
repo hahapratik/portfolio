@@ -58,7 +58,7 @@ const groups: { title: string; skills: Skill[] }[] = [
 
 export function Skills() {
   return (
-    <section id="skills" className="border-t border-border">
+    <section id="skills" className="section-enter border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
         <p className="font-mono text-xs text-primary">{'// toolchain'}</p>
         <h2 className="mt-3 text-3xl font-medium tracking-tight text-foreground md:text-4xl">
@@ -74,7 +74,7 @@ export function Skills() {
                 {group.skills.map((skill) => (
                   <li
                     key={skill.name}
-                    className="flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 transition-colors hover:border-primary/40"
+                    className="flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 transition-transform transition-colors hover:-translate-y-0.5 hover:border-primary/40"
                   >
                     <img
                       src={`${ICON_BASE}/${skill.slug}/${skill.variant ?? 'default'}.svg`}

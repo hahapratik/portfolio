@@ -56,7 +56,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="border-t border-border">
+    <section id="contact" className="section-enter border-t border-border">
       <div className="mx-auto grid max-w-5xl gap-10 px-6 py-20 md:grid-cols-[1fr_2fr] md:py-28">
         <div>
           <p className="font-mono text-xs text-primary">{'// say hello'}</p>

@@ -3,7 +3,6 @@ import { Hero } from '@/components/hero'
 import { Projects } from '@/components/projects'
 import { GithubActivity } from '@/components/github-activity'
 import { Skills } from '@/components/skills'
-import { Certificates } from '@/components/certificates'
 import { About } from '@/components/about'
 import { Contact } from '@/components/contact'
 import { CursorTrail } from '@/components/cursor-trail'
@@ -23,7 +22,6 @@ export default function Page() {
           <GithubActivity />
           <Projects />
           <Skills />
-          <Certificates />
           <About />
           <Contact />
         </main>

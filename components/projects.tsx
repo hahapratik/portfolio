@@ -32,7 +32,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="work" className="border-t border-border">
+    <section id="work" className="section-enter border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
         <p className="font-mono text-xs text-primary">{'// public repositories'}</p>
         <h2 className="mt-3 text-3xl font-medium tracking-tight text-foreground md:text-4xl">
@@ -45,7 +45,7 @@ export function Projects() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col rounded-lg border border-border bg-card p-6 transition-colors hover:border-primary/40"
+              className="group flex flex-col rounded-lg border border-border bg-card p-6 transition-transform transition-colors hover:-translate-y-1 hover:border-primary/40"
             >
               <div className="flex items-start justify-between gap-4">
                 <h3 className="font-mono text-lg font-medium text-card-foreground">
