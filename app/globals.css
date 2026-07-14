@@ -237,23 +237,24 @@
   }
 }
 
-.section-enter {
+.scroll-reveal {
   opacity: 0;
-  transform: translateY(14px);
-  animation: section-enter 0.7s ease-out forwards;
+  transform: translateY(20px);
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
+  will-change: opacity, transform;
 }
 
-@keyframes section-enter {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .section-enter {
+  .scroll-reveal {
     opacity: 1;
     transform: none;
-    animation: none;
+    transition: none;
   }
 }

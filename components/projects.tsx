@@ -32,7 +32,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="work" className="section-enter border-t border-border">
+    <section id="work" className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
         <p className="font-mono text-xs text-primary">{'// public repositories'}</p>
         <h2 className="mt-3 text-3xl font-medium tracking-tight text-foreground md:text-4xl">
