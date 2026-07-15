@@ -28,6 +28,16 @@ const projects = [
     status: 'Public Repo',
     link: 'https://github.com/hahapratik/BLOG-AWORLD-',
   },
+   {
+    title: 'github-actions-demo',
+    role: 'GitHub Actions automation and workflows',
+    description:
+      'A practical demonstration of continuous integration and deployment using GitHub Actions, featuring automated YAML pipelines for building, testing, and delivering code directly within GitHub.',
+    tags: ['GitHub Actions', 'CI/CD', 'YAML', 'Automation'],
+    status: 'Public Repo',
+    link: 'https://github.com/hahapratik/Github-Actions',
+  },
+
 ]
 
 export function Projects() {
