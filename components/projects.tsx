@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 const projects = [
   {
-    title: 'jenkins-demo',
+    title: 'jenkins',
     role: 'CI pipeline lab',
     description:
       'A hands-on Jenkins continuous integration lab — building and running automated pipelines against a Python codebase to practice jobs, triggers, and build stages.',
